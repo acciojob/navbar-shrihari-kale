@@ -1,4 +1,4 @@
-/* Navigation bar */
+
 .navbar {
   width: 100%;
   background-color: #6e072d;
@@ -8,24 +8,32 @@
   align-items: center;
   font-size: 18px;
 }
+
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
-} 
- .navbar li {
-  padding: calc(18px) calc(18px * 1.5);
-  border-right: 2px solid white;
-} 
-
- .navbar li:hover {
-  background-color: #b90e4d;
-  cursor: pointer;
- }
-.navbar .right li:first-child {
-  border-left: none;
 }
+
+
+.navbar li {
+  padding: 18px calc(18px * 1.5); 
+  margin: 0;                      
+  border-right: 2px solid white;
+  cursor: pointer;                
+}
+
+
 .navbar .left li:last-child {
   border-right: none;
+}
+
+.navbar .right li:first-child{
+  border-left: none;
+}
+
+
+.navbar li:hover {
+  background-color: #b90e4d;
 }
